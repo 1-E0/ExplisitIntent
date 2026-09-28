@@ -6,25 +6,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="10dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity3">
 
-    <Button
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnExplisit1"
-        android:text="Buka Explisit Intent" />
+        android:text="HALAMAN 3"
+        android:textAlignment="center" />
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/dataKirim"
-        android:inputType="text"
-        android:hint="Masukkan Kata yang ingin dikirimkan" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnExplisit2"
-        android:text="Kirim Data ke Activity 3" />
+        android:id="@+id/showData"
+        android:hint="Data dari MainActivity"
+        android:enabled="false" />
 
 </LinearLayout>
