@@ -8,6 +8,7 @@ import androidx.core.content.IntentCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+
 class MainActivity4 : AppCompatActivity() {
 
     companion object {
@@ -27,11 +28,16 @@ class MainActivity4 : AppCompatActivity() {
 
         val intentPegawai = IntentCompat.getParcelableArrayListExtra(intent, dataPegawai, Pegawai::class.java)
 
-        val isiText = intentPegawai?.joinToString(separator = "\n\n") { pegawai ->
-            "NIP : ${pegawai.NIP}\n" +
-            "Nama : ${pegawai.Nama ?: "-"}\n" +
-            "Dept : ${pegawai.Dept ?: "-"}"
-        } ?: "-"
+
+        val isiText : String ="NIP : ${intentPegawai?.get(0)?.NIP.toString()}, " +
+                "\n Nama : ${intentPegawai?.get(0)?.Nama.toString()}, " +
+                "\n Dept : ${intentPegawai?.get(0)?.Dept.toString()}" +
+                "\n  " +
+                "\n NIP : ${intentPegawai?.get(1)?.NIP.toString()}, " +
+                "\n Nama : ${intentPegawai?.get(1)?.Nama.toString()}, " +
+                "\n Dept : ${intentPegawai?.get(1)?.Dept.toString()}"
+
+
 
         val _showDataPegawai = findViewById<TextView>(R.id.showDataPegawai)
         _showDataPegawai.text = isiText
