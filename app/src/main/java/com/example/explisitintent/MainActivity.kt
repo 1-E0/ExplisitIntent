@@ -40,9 +40,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentWithData)
         }
 
+        val isiPegawai: ArrayList<Pegawai> = arrayListOf()
+        isiPegawai.add(Pegawai(1, "Daniel", "IT"))
+        isiPegawai.add(Pegawai(2,"ali","Marketing"))
+
         val _btnExplisit3 = findViewById<Button>(R.id.btnExplisit3)
         _btnExplisit3.setOnClickListener {
-            val isiPegawai = Pegawai(12345, "Budi", "IT")
+
             val intentWithData = Intent(
                 this@MainActivity,
                 MainActivity4::class.java
