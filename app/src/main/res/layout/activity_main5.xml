@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/rgItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbLaptop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laptop" />
+
+        <RadioButton
+            android:id="@+id/rbMouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mouse" />
+
+        <RadioButton
+            android:id="@+id/rbKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keyboard" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Konfirmasi Pilihan" />
+
+</LinearLayout>
